@@ -1,0 +1,55 @@
+.background-gradient(@color1, @color2) {
+    background: @color1;
+    background: -moz-linear-gradient(top, @color1 0%, @color2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @color1), color-stop(100%, @color2));
+    background: -webkit-linear-gradient(top, @color1 0%, @color2 100%);
+    background: -o-linear-gradient(top, @color1 0%, @color2 100%);
+    background: -ms-linear-gradient(top, @color1 0%, @color2 100%);
+    background: linear-gradient(to bottom, @color1 0%, @color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2',GradientType=0);
+}
+
+
+.bbAccordion {
+    margin-bottom: 10px;
+
+    .accordion-head {
+        padding: 0.5em 1em;
+        cursor: pointer;
+        border: 1px solid #24495d;
+        border-radius: 5px;
+        .background-gradient(#56d0fe, #4994bc);
+
+        &:hover {
+            .background-gradient(#49cafc, #59a9d3);
+        }
+
+        > *:first-child {
+            margin: 0;
+            padding-right: 20px;
+            color: #fff;
+            font-size: 1.3em;
+            line-height: 1.4em;
+            background: url(accordion-arrow-right.png) no-repeat 100% 50%;
+        }
+    }
+
+    .accordion-head,
+    &.active .accordion-head:hover {
+        .background-gradient(#4083a6, #4994bc);
+    }
+
+    &.active .accordion-head {
+        h3 {
+            background-image: url(accordion-arrow-down.png);
+        }
+    }
+
+    .accordion-content {
+        padding: 10px;
+
+        &.active {
+            display:block;
+        }
+    }
+}
