@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
         <meta charset="utf-8">
-		<title>bbAccordion</title>
+		<title>bbAccordion 1.2</title>
 
-		<link href="assets/css/reset.css" rel="stylesheet">
-		<link href="jquery.bbAccordion/jquery.bbAccordion.css" rel="stylesheet">
+		<link href="dist/jquery.bbAccordion.min.css" rel="stylesheet">
 		<link href="demo.css" rel="stylesheet">
 	</head>
 	<body>
@@ -14,7 +13,7 @@
                 <h1 class="lmb-10">bbAccordion</h1>
                 <div class="bbAccordion" data-accordion-group="group1">
                     <div class="accordion-head">
-                        <h2>Başlık Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                        <h2>Title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
                             veritatis, laborum sunt quae in vel. A voluptas odio obcaecati in.</h2>
                     </div>
                     <div class="accordion-content">
@@ -37,6 +36,20 @@
                             <li><a href="#">Et id odio soluta tempore dolor culpa voluptatibus.</a></li>
                             <li><a href="#">Vero, reiciendis, quisquam repudiandae tenetur laboriosam doloremque dolore.</a></li>
                         </ul>
+
+                        <div class="bbAccordion" data-accordion-group="group1-1">
+                            <div class="accordion-head">
+                                <h2>Title 1.1 A voluptas odio obcaecati in.</h2>
+                            </div>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li>Perspiciatis, totam, magni excepturi aliquam doloremque molestias exercitationem. Ex.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas.</li>
+                                    <li>Beatae optio officiis laboriosam dolorem nam dignissimos dolore ut.</li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <article>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corrupti sapiente molestias praesentium ut sed ducimus est accusamus. Repudiandae, beatae, dolore, quia, ratione sequi veniam maxime nobis magni nisi quod laboriosam qui cum ducimus! Dolorem, at, aperiam, eaque, possimus numquam enim quisquam ipsa omnis fugit deleniti officiis optio neque inventore eligendi voluptates amet dolorum iusto ad repudiandae nulla. Dolore, sint, cumque, ipsa, dicta nesciunt id et animi temporibus praesentium ex commodi ipsum nobis tempore! Accusantium, ad dolorum assumenda nihil veritatis.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, accusamus animi qui minima eligendi quidem consequuntur quis! Molestiae, dolorum, voluptatum, aspernatur, officiis qui sed at iste eveniet eaque exercitationem quasi.</p>
@@ -46,7 +59,7 @@
                 </div>
                 <div class="bbAccordion" data-accordion-group="group1">
                     <div class="accordion-head">
-                        <h2>Başlık Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quae debitis autem.</h2>
+                        <h2>Title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quae debitis autem.</h2>
                     </div>
                     <div class="accordion-content">
                         <ul>
@@ -94,7 +107,7 @@
                     <h1 class="lmb-10">Lorem ipsum dolor 2</h1>
                     <div class="bbAccordion" data-accordion-group="group2">
                         <div class="accordion-head">
-                            <h2>Başlık Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                            <h2>Title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
                                 veritatis, laborum sunt quae in vel. A voluptas odio obcaecati in.</h2>
                         </div>
                         <div class="accordion-content">
@@ -126,7 +139,7 @@
                     </div>
                     <div class="bbAccordion" data-accordion-group="group2">
                         <div class="accordion-head">
-                            <h2>Başlık Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quae debitis autem.</h2>
+                            <h2>Title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quae debitis autem.</h2>
                         </div>
                         <div class="accordion-content">
                             <ul>
@@ -206,7 +219,7 @@
                     </div>
                     <div class="bbAccordion" data-accordion-group="group2">
                         <div class="accordion-head">
-                            <h2>Başlık Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
+                            <h2>Title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat,
                                 veritatis, laborum sunt quae in vel. A voluptas odio obcaecati in.</h2>
                         </div>
                         <div class="accordion-content">
@@ -219,7 +232,7 @@
                     </div>
                     <div class="bbAccordion" data-accordion-group="group2">
                         <div class="accordion-head">
-                            <h2>Başlık Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quae debitis autem.</h2>
+                            <h2>Title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quae debitis autem.</h2>
                         </div>
                         <div class="accordion-content">
                             <ul>
@@ -250,8 +263,8 @@
             </div>
         </div>
 
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="jquery.bbAccordion/jquery.bbAccordion.js"></script>
+        <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="dist/jquery.bbAccordion.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
                 $('.bbAccordion').bbAccordion();
